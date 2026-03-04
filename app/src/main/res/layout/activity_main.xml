@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 1. The Background Image -->
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"
+        android:alpha="0.9" /> <!-- Adjust 0.1 (very faded) to 0.9 (mostly visible) -->
+
+    <!-- 2. Your UI Components on top of the image -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFBF35"
+            android:background="@drawable/edittext_border"
+            android:text="RICCI's CAFE Feedbacks"
+            android:alpha="0.9"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/etFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:textColorHint="#CCCCCC"
+            android:textStyle="bold"
+            android:hint="Enter Food Name"
+            android:inputType="text"
+            android:background="@drawable/edittext_border"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etFoodFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter Feedback Please"
+            android:inputType="textMultiLine"
+            android:lines="7"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="#CCCCCC"
+
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_border"
+            android:numStars="5"
+            android:padding="8dp"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#FFD700"
+            android:secondaryProgressTint="#FFD700"
+            android:stepSize="1.0" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+            android:backgroundTint="#41B1993A"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="33dp" />
+
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:background="@drawable/edittext_border"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</FrameLayout>

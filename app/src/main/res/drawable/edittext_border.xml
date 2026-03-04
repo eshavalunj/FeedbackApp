@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This adds the faded white background (Hex: #4D means 30% transparency) -->
+    <solid android:color="#26FFFFFF" />
+
+    <!-- This is the white border thickness -->
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF" />
+
+    <!-- This rounds the corners -->
+    <corners android:radius="12dp" />
+</shape>
